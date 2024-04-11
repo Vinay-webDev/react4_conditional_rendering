@@ -1,16 +1,11 @@
-
+/* it's better if you use ternary operator */
 function UserGreeting(props) {
 
-        if (props.isLoggedIn) {
-            return <h2> welcome {props.username} </h2>
-        } 
-        else {
-            return <h2> please log in to continue! </h2>
-        }
-}
+ return ( props.isLoggedIn? <h2 className="welcome" > welcome {props.username} </h2> : 
+                            <h2 className="please-login"> please login to continue! </h2>);
+}  
 
 export default UserGreeting
-
 
 
 
