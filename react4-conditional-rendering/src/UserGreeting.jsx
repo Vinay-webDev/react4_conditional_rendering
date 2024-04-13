@@ -18,8 +18,8 @@ function UserGreeting(props) {
 /* it's always a better practice to add 
 propTypes and defaultProps while using props */
 UserGreeting.PropTypes = {
-    isLoggedIn: Boolean,
-    username: String,
+    isLoggedIn: PropTypes.bool,
+    username: PropTypes.string,
 }
 UserGreeting.defaultProps = {
     isLoggedIn: false,
